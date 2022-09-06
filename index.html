@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Photo Editor</title>
+</head>
+
+<body>
+
+  <div class="title">
+    <h1>Image Editor by <span>Andri Firdaus</span></h1>
+  </div>
+
+  <div class="container">
+
+    <div class="canvas">
+      <img src="img/template.jpg" alt="Gambar">
+    </div>
+    <hr>
+
+    <div class="editor">
+
+      <div class="tabedit left">
+        <table>
+          <tr>
+            <td><label for="hue">Hue</label></td>
+            <td><input type="range" name="hue" id="hue" min="0" max="360" value="0"></td>
+          </tr>
+          <tr>
+            <td><label for="brightness">Brightness</label></td>
+            <td><input type="range" name="brightness" id="brightness" min="0" max="200" value="100"></td>
+          </tr>
+          <tr>
+            <td><label for="contrast">Contrast</label></td>
+            <td><input type="range" name="contrast" id="contrast" min="0" max="200" value="100"></td>
+          </tr>
+          <tr>
+            <td><label for="saturate">Saturate</label></td>
+            <td><input type="range" name="saturate" id="saturate" min="0" max="200" value="100"></td>
+          </tr>
+          <tr>
+            <td><label for="grayscale">Grayscale</label></td>
+            <td><input type="range" name="grayscale" id="grayscale" min="0" max="100" value="0"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="tabedit right">
+        <table>
+          <tr>
+            <td><label for="blur">Blur</label></td>
+            <td><input type="range" name="blur" id="blur" min="0" max="20" value="0"></td>
+          </tr>
+          <tr>
+            <td><label for="invert">Invert</label></td>
+            <td><input type="range" name="invert" id="invert" min="0" max="100" value="0"></td>
+          </tr>
+          <tr>
+            <td><label for="opacity">Opacity</label></td>
+            <td><input type="range" name="opacity" id="opacity" min="0" max="100" value="100"></td>
+          </tr>
+          <tr>
+            <td><label for="sepia">Sepia</label></td>
+            <td><input type="range" name="sepia" id="sepia" min="0" max="100" value="0"></td>
+          </tr>
+        </table>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+
+
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
